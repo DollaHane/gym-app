@@ -1,0 +1,103 @@
+.boxOne {
+  position: fixed;
+  top: 0;
+  z-index: 30;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #FFE1E0;
+}
+
+.boxTwo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto 0 auto;
+  width: 83.3333%;
+}
+
+.boxThree {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 16px;
+}
+
+.boxFour {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.boxFive {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  font-size: small;
+  text-decoration: none;
+}
+
+.boxSix {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.boxSev {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 40;
+  height: 100%;
+  width: 300px;
+  background-color: #FFE1E0; 
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.boxEight {
+  display: flex;
+  justify-content: end;
+  padding: 1rem;
+}
+
+.boxNine {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  font-size: x-small;
+}
+
+.buttonOne {
+  height: 3rem;
+  width: 3rem;
+  padding: 0rem;
+  background-color: #FFC132;
+  border: none;
+  border-radius: 1.5rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.buttonTwo {
+  background-color: #ffe1e000;
+  border: none;
+}
+
+.Bars3 {
+  height: 2rem;
+  width: 2rem;
+  color: white;
+}
+
+.XMarkIcon {
+  height: 1.5rem;
+  width: 1.5rem;
+  padding: 0px;
+  color: #5E0000;
+}

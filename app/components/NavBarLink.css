@@ -1,0 +1,19 @@
+.linkOne {
+  color: #FF6B66;
+  text-decoration: none;
+  transition-duration: 1s;
+}
+
+.linkOne:hover {
+  color: #FFA6A3
+}
+
+.linkTwo {
+  color: black;
+  text-decoration: none;
+  transition-duration: 1s;
+}
+
+.linkTwo:hover {
+  color: #FFA6A3
+}
