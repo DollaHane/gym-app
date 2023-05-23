@@ -1,0 +1,33 @@
+.secOne {
+  width: 100%;
+  padding: 10px 0;
+  background-color: #FFE1E0;
+}
+
+.mdOne {
+  margin: 0 auto 0 auto;
+  width: 83.33%;
+}
+
+@media (min-width: 768px) {
+  .boxOne {
+    width: 60%;
+  }
+}
+
+.boxTwo {
+  margin-top: 10px;
+  height: 353px;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.typoOne {
+  padding: 10px 0;
+}
+
+.ulOne {
+  width: 2800px;
+  white-space: nowrap;
+}
