@@ -14,6 +14,7 @@ import ActionButton from "../componentsGlobal/ActionButton";
 import HText from "../componentsGlobal/HText";
 import { BenefitType, SelectedPage } from "../componentsGlobal/types";
 import BenefitsPageGraphic from "../assets/BenefitsPageGraphic.png";
+import styles from "./Benefits.module.css"
 
 
 const benefits: Array<BenefitType> = [
@@ -48,12 +49,12 @@ type Props = {
 export default function Benefits({ setSelectedPage }: Props): React.JSX.Element {
 
   return (
-    <section id="benefits" className="mx-auto min-h-full w-5/6 py-20">
+    <section id="benefits" className={styles.secOne}>
       <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.Benefits)}>
 
         {/* HEADER */}
         <motion.div
-          className='md:my-5 md:w-3/5'
+          className={styles.mdOne}
           initial='hidden'
           whileInView='visible'
           viewport={{ once: true, amount: 0.5 }}
@@ -64,7 +65,7 @@ export default function Benefits({ setSelectedPage }: Props): React.JSX.Element 
           }}
         >
           <HText>MORE THAN JUST GYM</HText>
-          <Typography className="my-5 text-sm">
+          <Typography className={styles.typoOne}>
             We provide world class fitness equipment, trainers and classes to
             get you to your ultimate fitness goals with ease. We provide true
             care into each and every member.
@@ -73,7 +74,7 @@ export default function Benefits({ setSelectedPage }: Props): React.JSX.Element 
 
         {/* BENEFITS */}
         <motion.div
-          className='mt-5 items-center justify-between gap-8 md:flex'
+          className={styles.mdTwo}
           initial='hidden'
           whileInView='visible'
           viewport={{ once: true, amount: 0.5 }}
@@ -91,21 +92,21 @@ export default function Benefits({ setSelectedPage }: Props): React.JSX.Element 
         </motion.div>
 
         {/* GRAPHICS & DESCRIPTION */}
-        <Box className="mt-16 items-center justify-between gap-20 md:mt-28 md:flex">
+        <Box className={styles.boxOne}>
 
           {/* GRAPHIC */}
           <Image
-            className='mx-auto'
+            className={styles.imgOne}
             alt='benefits-page-graphic'
             src={BenefitsPageGraphic}
           />
 
           {/* DESCRIPTION #1 */}
-          <Box>
+          <Box className={styles.boxSix}>
 
             {/* TITLE */}
-            <Box className='reletive'>
-              <Box className='before:absolute before:-top-20 before:-left-20 before:z-[1] before:content-abstractwaves'>
+            <Box className={styles.boxTwo}>
+              <Box className={styles.boxThree}>
                 <motion.div
                   initial='hidden'
                   whileInView='visible'
@@ -119,7 +120,7 @@ export default function Benefits({ setSelectedPage }: Props): React.JSX.Element 
 
                   <HText>
                     MILLIONS OF HAPPY MEMBERS GETTING{" "}
-                    <span className='text-primary-500'>FIT</span>
+                    <Typography className={styles.typoTwo}>FIT</Typography>
                   </HText>
                 
                 </motion.div>
@@ -129,7 +130,7 @@ export default function Benefits({ setSelectedPage }: Props): React.JSX.Element 
             {/* DESCRIPTION #2 */}
             <motion.div
               initial='hidden'
-              whileInView='hidden'
+              whileInView='visible'
               viewport={{ once: true, amount: 0.5 }}
               transition={{ delay: 0.2, duration: 0.5 }}
               variants={{
@@ -137,7 +138,7 @@ export default function Benefits({ setSelectedPage }: Props): React.JSX.Element 
                 visible: { opacity: 1, x: 0 },
               }}
             >
-              <Typography className='my-5'>
+              <Typography className={styles.typoThree}>
                 Nascetur aenean massa auctor tincidunt. Iaculis potenti amet
                 egestas ultrices consectetur adipiscing ultricies enim. Pulvinar
                 fames vitae vitae quis. Quis amet vulputate tincidunt at in
@@ -145,7 +146,7 @@ export default function Benefits({ setSelectedPage }: Props): React.JSX.Element 
                 tellus. Ullamcorper arcu id pretium sapien proin integer nisl.
                 Felis orci diam odio.
               </Typography>
-              <Typography className='mb-5'>
+              <Typography className={styles.typoFour}>
                 Fringilla a sed at suspendisse ut enim volutpat. Rhoncus vel est
                 tellus quam porttitor. Mauris velit euismod elementum arcu neque
                 facilisi. Amet semper tortor facilisis metus nibh. Rhoncus sit
@@ -154,8 +155,8 @@ export default function Benefits({ setSelectedPage }: Props): React.JSX.Element 
             </motion.div>
 
             {/* BUTTON */}
-            <Box className='reletive mt-16'>
-              <Box className='before:absolute before:-bottom-20 before:right-40 before:z-[-1] before:content-sparkles'>
+            <Box className={styles.boxFour}>
+              <Box className={styles.boxFive}>
                 <ActionButton setSelectedPage={setSelectedPage}>
                   Join Now
                 </ActionButton>

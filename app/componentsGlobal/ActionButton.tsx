@@ -2,6 +2,7 @@
 import React from 'react'
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { SelectedPage } from "./types";
+import styles from "./ActionButton.module.css"
 
 type Props = {
   children: React.ReactNode;
@@ -12,7 +13,7 @@ export default function ActionButton({ children, setSelectedPage }: Props) {
 
   return (
     <AnchorLink
-      className="rounded-md bg-secondary-500 px-10 py-2 hover:bg-primary-500 hover:text-white"
+      className={styles.anchor}
       onClick={() => setSelectedPage(SelectedPage.ContactUs)}
       href={`#${SelectedPage.ContactUs}`}
     >

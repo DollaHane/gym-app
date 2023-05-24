@@ -4,6 +4,7 @@ import { SelectedPage } from "../componentsGlobal/types";
 import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import styles from "./Benefit.module.css"
+import { Box, Typography } from '@mui/material';
 
 const childVariant = {
   hidden: { opacity: 0, scale: 0.9 },
@@ -22,20 +23,20 @@ export default function Benefit({ icon, title, description, setSelectedPage }: P
   return (
     <motion.div 
       variants={childVariant} 
-      className="mt-5 rounded-md border-2 border-gray-100 px-5 py-16 text-center"
+      className={styles.mdOne}
     >
 
-      <div className="mb-4 flex justify-center">
-        <div className="rounded-full border-2 border-gray-100 bg-primary-100 p-4">
+      <Box className={styles.boxOne}>
+        <Box className={styles.boxTwo}>
           {icon}
-        </div>
-      </div>
+        </Box>
+      </Box>
 
-      <h4 className="font-bold">{title}</h4>
-      <p className="my-3">{description}</p>
+      <Typography className={styles.typoOne} variant="h4">{title}</Typography>
+      <Typography className={styles.typoTwo}>{description}</Typography>
 
       <AnchorLink
-        className="text-sm font-bold text-primary-500 underline hover:text-secondary-500"
+        className={styles.anchorOne}
         onClick={() => setSelectedPage(SelectedPage.ContactUs)}
         href={`#${SelectedPage.ContactUs}`}
       >

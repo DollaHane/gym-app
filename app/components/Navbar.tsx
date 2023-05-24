@@ -13,7 +13,7 @@ import { SelectedPage } from "../componentsGlobal/types";
 import useMediaQuery from "../hooks/useMediaQuery";
 import ActionButton from "../componentsGlobal/ActionButton";
 import Logo from "../assets/Logo.png";
-import './NavBar.css';
+import styles from "./NavBar.module.css"
 
 
 type Props = {
@@ -24,16 +24,14 @@ type Props = {
 
 export default function Navbar({ isTopOfPage, selectedPage, setSelectedPage }: Props): React.JSX.Element {
   
-  const flexBetween = "flex items-center justify-between";
   const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
-  const navbarBackground = isTopOfPage ? "" : "#FFE1E0 drop-shadow";
 
   return (
     <nav>
-      <Box className="boxOne">
-        <Box className="boxTwo">
-          <Box className="boxThree">
+      <Box className={styles.boxOne}>
+        <Box className={styles.boxTwo}>
+          <Box className={styles.boxThree}>
 
             {/* LEFT SIDE */}
             <Image alt="logo" src={Logo}/>
@@ -41,7 +39,7 @@ export default function Navbar({ isTopOfPage, selectedPage, setSelectedPage }: P
             {/* RIGHT SIDE */}
             {isAboveMediumScreens ? (
 
-              <Box className="boxFour">
+              <Box className={styles.boxThree}>
 
                 {/* NAVIGATION */}
                 <Box className="boxFive">
@@ -68,7 +66,7 @@ export default function Navbar({ isTopOfPage, selectedPage, setSelectedPage }: P
                 </Box>
 
                 {/* SIGN IN */}
-                <Box className="boxSix">
+                <Box className={styles.boxSix}>
                   <Typography>Sign In</Typography>
                   <ActionButton setSelectedPage={setSelectedPage}>
                     Become a Member
@@ -80,10 +78,10 @@ export default function Navbar({ isTopOfPage, selectedPage, setSelectedPage }: P
             ) : (
 
               <button
-                className="buttonOne"
+                className={styles.buttonOne}
                 onClick={() => setIsMenuToggled(!isMenuToggled)}
               >
-                <Bars3Icon className="Bars3"/>
+                <Bars3Icon className={styles.Bars3}/>
               </button>
 
             )}
@@ -94,20 +92,20 @@ export default function Navbar({ isTopOfPage, selectedPage, setSelectedPage }: P
 
       {/* MOBILE MENU MODAL */}
       {!isAboveMediumScreens && isMenuToggled && (
-        <Box className="boxSev">
+        <Box className={styles.boxSev}>
 
           {/* CLOSE ICON */}
-          <Box className='boxEight'>
+          <Box className={styles.boxEight}>
             <button 
-              className='buttonTwo'
+              className={styles.buttonTwo}
               onClick={() => setIsMenuToggled(!isMenuToggled)}
             >
-              <XMarkIcon className='XMarkIcon'/>
+              <XMarkIcon className={styles.XMarkIcon}/>
             </button>
           </Box>
 
           {/* NAVIGATION */}
-          <Box className="boxFive">
+          <Box className={styles.boxFive}>
             <Link
               page="Home"
               selectedPage={selectedPage}

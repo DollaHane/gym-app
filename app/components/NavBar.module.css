@@ -75,12 +75,13 @@
 }
 
 .buttonOne {
-  height: 3rem;
-  width: 3rem;
+  height: 2rem;
+  width: 2rem;
+  align-items: center;
   padding: 0rem;
   background-color: #FFC132;
   border: none;
-  border-radius: 1.5rem;
+  border-radius: 0.25rem;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
@@ -90,8 +91,8 @@
 }
 
 .Bars3 {
-  height: 2rem;
-  width: 2rem;
+  height: 1.5rem;
+  width: 1.5rem;
   color: white;
 }
 

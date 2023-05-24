@@ -9,6 +9,7 @@ import { motion } from "framer-motion";
 import { SelectedPage, ClassType } from "../componentsGlobal/types";
 import HText from "../componentsGlobal/HText";
 import Class from "./OurClass";
+import styles from "./OurClasses.module.css"
 
 // IMAGE Imports
 import image1 from "../assets/image1.png";
@@ -60,12 +61,12 @@ type Props = {
 
 export default function OurClasses({ setSelectedPage }: Props) {
   return (
-    <section id="ourclasses" className='secOne'>
+    <section id="ourclasses" className={styles.secOne}>
       <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.OurClasses)}>
 
         {/* TYPOGRAPHY */}
         <motion.div
-          className='mdOne'
+          className={styles.mdOne}
           initial='hidden'
           whileInView='visible'
           viewport={{ once: true, amount: 0.5}}
@@ -75,9 +76,9 @@ export default function OurClasses({ setSelectedPage }: Props) {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <Box className="boxOne">
+          <Box className={styles.boxOne}>
             <HText>OUR CLASSES</HText>
-            <Typography className='typoOne'>
+            <Typography className={styles.typoOne}>
               Fringilla a sed at suspendisse ut enim volutpat. Rhoncus vel est
               tellus quam porttitor. Mauris velit euismod elementum arcu neque
               facilisi. Amet semper tortor facilisis metus nibh. Rhoncus sit
@@ -87,8 +88,8 @@ export default function OurClasses({ setSelectedPage }: Props) {
         </motion.div>
 
         {/* LIST ITEMS */}
-        <Box className="boxTwo">
-          <ul className='ulOne'>
+        <Box className={styles.boxTwo}>
+          <ul className={styles.ulOne}>
             {classes.map((item: ClassType, index) => (
               <Class
                 key={`${item}-${index}`}

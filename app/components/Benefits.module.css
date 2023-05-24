@@ -1,0 +1,98 @@
+.secOne {
+  margin: 0 auto 0 auto;
+  min-height: 100%;
+  width: 83.33%;
+  padding: 5rem 0 5rem 0;
+}
+
+.mdTwo {
+  margin-top: 1.25rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.typoOne {
+  margin: 1.25rem 0 1.25rem 0;
+  font-size: small;
+}
+
+.typoTwo {
+  color: #FF6B66;
+}
+
+.typoThree {
+  margin: 1.25rem 0 1.25rem 0;
+  color: black;
+}
+
+.typoFour {
+  margin-bottom: 1.25rem;
+  color: black;
+}
+
+.boxOne {
+  margin: 4rem auto 0 auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.boxTwo {
+  position: relative;
+}
+
+.boxThree::before {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  z-index: 1;
+  content: abstractwaves;
+}
+
+.boxFour {
+  position: relative;
+  margin-top: 4rem;
+}
+
+.boxFive::before {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  z-index: -1;
+}
+
+.boxSix {
+  width: 70vw;
+}
+
+.imgOne {
+  margin: 0 auto;
+  width: 50vw;
+  height: auto;
+}
+
+.button {
+  width: 50px;
+  height: 30px;
+  background-color: #FFC132;
+  border: none;
+  border-radius: 15px;
+}
+
+@media (min-width: 768px) {
+  .mdOne {
+    margin: 1.25rem 0 1.25rem 0;
+    width: 60%;
+  }
+  .mdTwo {
+    display: flex;
+  }
+  .imgOne {
+    width: 50vw;
+  }
+  .boxOne {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+  }
+}

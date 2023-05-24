@@ -1,7 +1,6 @@
 import React from 'react'
 import { Box, Typography } from '@mui/material'
-import Image from 'next/image'
-import "./OurClass.css"
+import styles from "./OurClass.module.css"
 
 type Props = {
   name: string;
@@ -12,12 +11,12 @@ type Props = {
 export default function OurClass({ name, description, image }: Props) {
 
   return (
-    <li className='list'>
+    <li className={styles.list}>
       <Box className="boxOne">
-        <Typography className="typoOne">{name}</Typography>
-        <Typography className="typoTwo">{description}</Typography>
+        <Typography className={styles.typoOne}>{name}</Typography>
+        <Typography className={styles.typoTwo}>{description}</Typography>
       </Box>
-      <Image alt={image} src={image}/>
+      <img width={100} height={100} alt={image} src={image}/>
     </li>
   )
 }

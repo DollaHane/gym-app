@@ -2,7 +2,7 @@
 import React from 'react'
 import { SelectedPage } from "../componentsGlobal/types";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import "./NavBarLink.css"
+import styles from "./NavBarLink.module.css"
 
 type Props = {
   page: string;
@@ -16,7 +16,7 @@ export default function NavbarLink({ page, selectedPage, setSelectedPage }: Prop
   
   return (
     <AnchorLink
-    className={`${selectedPage === lowerCasePage ? "linkOne" : "linkTwo"}`}
+    className={`${selectedPage === lowerCasePage ? styles.linkOne : styles.linkTwo}`}
     href={`#${lowerCasePage}`}
     onClick={() => setSelectedPage(lowerCasePage)}
     >

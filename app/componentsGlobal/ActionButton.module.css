@@ -1,0 +1,15 @@
+.anchor {
+  padding: 0 2rem 0 2rem;
+  text-align: center;
+  justify-content: center;
+  height: 20px;
+  color: black;
+  background-color: #FFC132;
+  border-radius: 0.5rem;
+  text-decoration: none;
+}
+
+.anchor:hover{
+  color: white;
+  background-color: #FF6B66;
+}

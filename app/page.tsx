@@ -1,8 +1,9 @@
 'use client'
 import React, { useState, useEffect } from 'react'
+import { SelectedPage } from './componentsGlobal/types'
 import Navbar from './components/Navbar'
 import Benefits from './components/Benefits'
-import { SelectedPage } from './componentsGlobal/types'
+import OurClasses from './components/OurClasses'
 
 export default function App() {
 
@@ -29,6 +30,7 @@ export default function App() {
         setSelectedPage={setSelectedPage}
       />
       <Benefits setSelectedPage={setSelectedPage}/>
+      <OurClasses setSelectedPage={setSelectedPage}/>
     </div>
   )
 }
