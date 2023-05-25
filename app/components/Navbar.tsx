@@ -42,7 +42,7 @@ export default function Navbar({ isTopOfPage, selectedPage, setSelectedPage }: P
               <Box className={styles.boxThree}>
 
                 {/* NAVIGATION */}
-                <Box className="boxFive">
+                <Box className={styles.boxFive}>
                   <Link
                     page="Home"
                     selectedPage={selectedPage}
@@ -105,7 +105,7 @@ export default function Navbar({ isTopOfPage, selectedPage, setSelectedPage }: P
           </Box>
 
           {/* NAVIGATION */}
-          <Box className={styles.boxFive}>
+          <Box className={styles.boxTen}>
             <Link
               page="Home"
               selectedPage={selectedPage}

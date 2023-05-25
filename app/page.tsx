@@ -1,9 +1,13 @@
 'use client'
 import React, { useState, useEffect } from 'react'
 import { SelectedPage } from './componentsGlobal/types'
+
+// PAGE CONTENT
 import Navbar from './components/Navbar'
+import Home from './components/Home'
 import Benefits from './components/Benefits'
 import OurClasses from './components/OurClasses'
+import ContactUs from './components/ContactUs'
 
 export default function App() {
 
@@ -29,8 +33,10 @@ export default function App() {
         selectedPage={selectedPage}
         setSelectedPage={setSelectedPage}
       />
+      <Home setSelectedPage={setSelectedPage}/>
       <Benefits setSelectedPage={setSelectedPage}/>
       <OurClasses setSelectedPage={setSelectedPage}/>
+      <ContactUs setSelectedPage={setSelectedPage}/>
     </div>
   )
 }

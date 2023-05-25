@@ -1,8 +1,30 @@
+@media screen and (min-width: 768px) {
+  .mdOne {
+    margin: 1.25rem 0 1.25rem 0;
+    width: 60%;
+  }
+  .mdTwo {
+    display: flex;
+  }
+  .imgOne {
+    width: 50vw;
+  }
+  .boxOne {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .secOne {
   margin: 0 auto 0 auto;
   min-height: 100%;
   width: 83.33%;
   padding: 5rem 0 5rem 0;
+}
+
+.mdOne {
+  margin-top: 3rem;
 }
 
 .mdTwo {
@@ -14,7 +36,7 @@
 
 .typoOne {
   margin: 1.25rem 0 1.25rem 0;
-  font-size: small;
+  font-size: medium;
 }
 
 .typoTwo {
@@ -43,10 +65,10 @@
 
 .boxThree::before {
   position: absolute;
-  top: -20px;
-  left: -20px;
+  top: -80px;
+  left: -40px;
   z-index: 1;
-  content: abstractwaves;
+  content: url(../assets/AbstractWaves.png);
 }
 
 .boxFour {
@@ -56,9 +78,10 @@
 
 .boxFive::before {
   position: absolute;
-  bottom: -20px;
-  right: -20px;
+  bottom: -40px;
+  right: -40px;
   z-index: -1;
+  content: url(../assets/Sparkles.png);
 }
 
 .boxSix {
@@ -79,20 +102,7 @@
   border-radius: 15px;
 }
 
-@media (min-width: 768px) {
-  .mdOne {
-    margin: 1.25rem 0 1.25rem 0;
-    width: 60%;
-  }
-  .mdTwo {
-    display: flex;
-  }
-  .imgOne {
-    width: 50vw;
-  }
-  .boxOne {
-    margin-top: 5rem;
-    display: flex;
-    justify-content: center;
-  }
+.icon {
+  height: 2rem;
+  width: 2rem;
 }

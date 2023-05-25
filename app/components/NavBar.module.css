@@ -37,8 +37,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 5px;
-  font-size: small;
+  gap: 10px;
+  font-size: medium;
   text-decoration: none;
 }
 
@@ -74,15 +74,25 @@
   font-size: x-small;
 }
 
+.boxTen {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  font-size: medium;
+  text-decoration: none;
+}
+
 .buttonOne {
   height: 2rem;
   width: 2rem;
   align-items: center;
   padding: 0rem;
-  background-color: #FFC132;
+  background-color: #ffc13200;
   border: none;
   border-radius: 0.25rem;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
 }
 
 .buttonTwo {
@@ -91,14 +101,14 @@
 }
 
 .Bars3 {
-  height: 1.5rem;
-  width: 1.5rem;
-  color: white;
+  height: 2rem;
+  width: 2rem;
+  color: #5E0000;
 }
 
 .XMarkIcon {
-  height: 1.5rem;
-  width: 1.5rem;
+  height: 2rem;
+  width: 2rem;
   padding: 0px;
   color: #5E0000;
 }
