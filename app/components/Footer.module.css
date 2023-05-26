@@ -1,0 +1,38 @@
+@media screen and (min-width: 1060px) {
+  .boxOne {
+    display: flex;
+  }
+  .boxTwo {
+    margin-top: 0rem;
+  }
+}
+
+.footer {
+  padding: 2rem 0;
+  background-color: #FFE1E0;
+}
+
+.boxOne {
+  justify-content: center;
+  margin: 0 auto 0 auto;
+  width: 83.33%;
+  gap: 1rem;
+}
+
+.boxTwo {
+  margin-top: 2rem;
+  flex-basis: 50%;
+}
+
+.typoOne {
+ margin: 1rem 0;
+}
+
+.typoTwo {
+  font-size: larger;
+  font-weight: bold;
+}
+
+.typoThree {
+  margin: 1rem 0;
+}
