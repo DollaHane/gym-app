@@ -56,7 +56,7 @@ export default function Home({ setSelectedPage }: Props) {
             {/* MAIN LOGO IMAGE */}
             <Box className={styles.boxTwo}>
               <Box className={styles.boxThree}>
-                <Image alt="home-page-text" src={HomePageText}/>
+                <Image className={styles.imgOne} alt="home-page-text" src={HomePageText}/>
               </Box>
             </Box>
 
@@ -98,7 +98,7 @@ export default function Home({ setSelectedPage }: Props) {
 
         {/* IMAGE */}
         <Box className={styles.boxFour}>
-          <Image alt="home-pageGraphic" src={HomePageGraphic}/>
+          <Image className={styles.imgTwo} alt="home-pageGraphic" src={HomePageGraphic}/>
         </Box>
 
       </motion.div>
