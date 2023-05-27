@@ -19,6 +19,10 @@
   .boxSix {
     width: 90%;
   }
+  .boxFive::before {
+    bottom: -80px;
+    right: -10px;
+  }
 }
 
 .secOne {

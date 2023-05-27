@@ -2,7 +2,6 @@
   .secOne {
     width: 100%;
     height: auto;
-    gap: 0.1rem;
   }
   .mdOne {
     width: 90%;
@@ -23,6 +22,9 @@
   .typoOne {
     font-size: small;
     text-align: center;
+  }
+  .imgOne {
+    height: 70%
   }
   .imgTwo {
     height: 70%;
