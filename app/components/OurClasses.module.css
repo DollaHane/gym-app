@@ -2,7 +2,7 @@
   width: 100%;
   height: 100%;
   padding: 10px 0;
-  background-color: #FFE1E0;
+  background-image: linear-gradient( 135deg, #FFE1E0 20%, #ff98ae 100%);
 }
 
 .mdOne {
@@ -10,14 +10,7 @@
   width: 83.33%;
 }
 
-@media (min-width: 768px) {
-  .boxOne {
-    width: 60%;
-  }
-}
-
 .boxTwo {
-  margin-top: 10px;
   height: 50%;
   width: 100%;
   overflow-x: auto;
@@ -31,4 +24,10 @@
 .ulOne {
   width: 280px;
   white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+  .boxOne {
+    width: 60%;
+  }
 }

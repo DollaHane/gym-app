@@ -5,6 +5,7 @@
   }
   .mdTwo {
     display: flex;
+    flex-direction: column;
   }
   .imgOne {
     width: 50vw;
@@ -12,7 +13,11 @@
   .boxOne {
     margin-top: 5rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+  }
+  .boxSix {
+    width: 90%;
   }
 }
 
@@ -32,6 +37,10 @@
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
+}
+
+.mdThree {
+  display: flex;
 }
 
 .typoOne {
@@ -55,7 +64,7 @@
 
 .boxOne {
   display: flex;
-  margin: 4rem auto 0 auto;
+  margin: 2rem auto 0 auto;
   align-items: center;
   justify-content: space-between;
 }
@@ -80,13 +89,14 @@
 .boxFive::before {
   position: absolute;
   bottom: -40px;
-  right: -40px;
+  right: -20px;
   z-index: -1;
   content: url(../assets/Sparkles.png);
 }
 
 .boxSix {
-  width: 70%;
+  margin: 2rem 0;
+  width: 90%;
 }
 
 .imgOne {

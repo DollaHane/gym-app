@@ -108,6 +108,7 @@ export default function Benefits({ setSelectedPage }: Props): React.JSX.Element 
             <Box className={styles.boxTwo}>
               <Box className={styles.boxThree}>
                 <motion.div
+                className={styles.mdThree}
                   initial='hidden'
                   whileInView='visible'
                   viewport={{ once: true, amount: 0.5 }}
@@ -119,8 +120,7 @@ export default function Benefits({ setSelectedPage }: Props): React.JSX.Element 
                 >
 
                   <HText>
-                    MILLIONS OF HAPPY MEMBERS GETTING{" "}
-                    <Typography className={styles.typoTwo}>FIT</Typography>
+                    MILLIONS OF HAPPY MEMBERS GETTING <span className={styles.typoTwo}>FIT</span>
                   </HText>
                 
                 </motion.div>
