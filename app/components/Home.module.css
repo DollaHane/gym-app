@@ -21,15 +21,13 @@
     width: 100%;
     margin-top: 100px;
   }
-  .boxThree::before {
-    content: url(../assets/EvolveText.png);
-  }
   .boxFour {
     justify-items: end;
     z-index: 10;
   }
   .typoOne {
     font-size: small;
+    text-align: center;
   }
   .imgTwo {
     width: 100%;
@@ -37,30 +35,56 @@
 }
 
 .secOne {
-  gap: 4rem;
+  width: 100%;
+  height: 100%;
+  gap: 2rem;
   background-color: rgb(239, 239, 239);
-  padding: 1rem 0 1rem 0;
 }
 
 .mdOne {
   display: flex;
-  margin: 0 auto;
-  width: 85%;
+  margin: 20px auto 0 auto;
+  width: 90%;
   align-items: center;
   justify-content: center;
 }
 
-.mdThree {
+.mdTwo {
   display: flex;
-  align-items: center;
-  margin-top: 0.5rem;  
-  gap: 1rem;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-.boxOne {
+.mdThree {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.boxOneLeft {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 2rem;
   z-index: 1;
-  margin-top: 100px;
+}
+
+.boxFourRight {
+  width: 50%;
+  z-index: 2;
+}
+
+.imgOne {
+  width: 100%;
+  object-fit: scale-down;
+  z-index: 1;
+}
+
+.imgTwo {
   width: 80%;
+  margin: 0 auto;
+  object-fit: scale-down;
+  z-index: 5;
 }
 
 .boxTwo {
@@ -74,16 +98,12 @@
   z-index: -1;
 }
 
-.boxFour {
-  flex-basis: 60%;
-  justify-content: center;
-}
 
 .boxFive {
-  height: 150px;
+  height: 85px;
   width: 100%;
   padding: 1rem 0;
-  background-color: #FFE1E0;
+  background-image: linear-gradient( 135deg, #FFE1E0 20%, #ff98ae 100%);
 }
 
 .boxSix {
@@ -110,12 +130,10 @@
   color: #FFC132;
 }
 
-.imgOne {
-  width: 90%;
-  object-fit: scale-down;
-}
 
-.imgTwo {
-  width: 90%;
+.imgThree {
+  width: 90vw;
   object-fit: scale-down;
+  z-index: -10;
+  top: -40px;
 }

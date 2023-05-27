@@ -16,6 +16,7 @@ import styles from "./Home.module.css"
 
 // IMAGE Imports
 import HomePageText from "../assets/HomePageText.png";
+import Evolve from "../assets/EvolveText.png"
 import HomePageGraphic from "../assets/HomePageGraphic.png";
 import SponsorRedBull from "../assets/SponsorRedBull.png";
 import SponsorForbes from "../assets/SponsorForbes.png";
@@ -27,7 +28,7 @@ type Props = {
 
 export default function Home({ setSelectedPage }: Props) {
 
-  const isAboveMediumScreens = useMediaQuery("(min-width:1060px)")
+  const isAboveMediumScreens = useMediaQuery("(min-width:768px)")
 
   return (
     <section id="home" className={styles.secOne}>
@@ -38,10 +39,10 @@ export default function Home({ setSelectedPage }: Props) {
         onViewportEnter={() => setSelectedPage(SelectedPage.Home)}
       >
 
-        {/* HEADER */}
-        <Box className={styles.boxOne}>
+        {/* HEADER / LEFT SIDE */}
+        <Box className={styles.boxOneLeft}>
 
-          {/* HEADINGS */}
+          {/* HEADING LOGO & SLOGAN */}
           <motion.div
             className={styles.mdTwo}
             initial="hidden"
@@ -55,9 +56,7 @@ export default function Home({ setSelectedPage }: Props) {
           >
             {/* MAIN LOGO IMAGE */}
             <Box className={styles.boxTwo}>
-              <Box className={styles.boxThree}>
                 <Image className={styles.imgOne} alt="home-page-text" src={HomePageText}/>
-              </Box>
             </Box>
 
             {/* INTRODUCTION TEXT */}
@@ -69,7 +68,7 @@ export default function Home({ setSelectedPage }: Props) {
 
           </motion.div>
 
-          {/* ACTIONS */}
+          {/* ACTION BUTTONS */}
           <motion.div
             className={styles.mdThree}
             initial="hidden"
@@ -96,8 +95,8 @@ export default function Home({ setSelectedPage }: Props) {
           </motion.div>
         </Box>
 
-        {/* IMAGE */}
-        <Box className={styles.boxFour}>
+        {/* IMAGE / RIGHT SIDE */}
+        <Box className={styles.boxFourRight}>
           <Image className={styles.imgTwo} alt="home-pageGraphic" src={HomePageGraphic}/>
         </Box>
 

@@ -32,7 +32,7 @@ export default function Benefit({ icon, title, description, setSelectedPage }: P
         </Box>
       </Box>
 
-      <Typography className={styles.typoOne} variant="h4">{title}</Typography>
+      <Typography className={styles.typoOne} variant="h5">{title}</Typography>
       <Typography className={styles.typoTwo}>{description}</Typography>
 
       <AnchorLink
